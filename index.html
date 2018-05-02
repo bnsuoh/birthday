@@ -13,7 +13,6 @@
     }
     #main {
     	text-align: center;
-    	padding-top: 75px;
     }
     h2 {
     	font-family: 'Covered By Your Grace', sans-serif;
@@ -30,17 +29,29 @@
     	text-align: left;
     	font-size: 2.1em;
     }
-    img {
-    	width: 60%;
-    	border: 15px solid #4D8750;
+ 
+    @media (max-width: 991px) {
+    	img {
+    		border: 10px solid #4D8750;
+    		width: 100%;
+   		}
+   		#main {
+	    	padding-top: 30px;
+	    }
     }
 
+
     @media (min-width: 992px) {	
-	#main {
-    	text-align: center;
-    	padding-right: 150px;
-    	padding-left: 150px;
-    }
+		#main {
+	    	text-align: center;
+	    	padding-right: 150px;
+	    	padding-left: 150px;
+	    	padding-top: 75px;
+	    }
+	    img {
+	    	width: 60%;
+	    	border: 15px solid #4D8750;
+	    }
     }
 	</style>
   </head>
